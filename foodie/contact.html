@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            background-color: rgb(59, 54, 54);
+            justify-content: center;
+            gap: 15px;
+     }
+        a{
+            text-decoration: none;
+            color: white;
+    }
+         .frame a{
+            color: red;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+           background: #333;
+           color: white;
+           text-align: center;
+           padding: 15px;
+           margin-top: 20px;
+           opacity: 0.8;
+        }
+        .frame{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            padding: 20px;
+            border-radius: 9px;
+            box-shadow: 1px 2px 2px 1px black;
+            align-self: center;
+            height: 60vh;
+            width: 50vw;
+            font-size: 18px;
+            
+        }
+        iframe{
+            padding: 8px;
+            width: 100%;
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(233, 138, 103);
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+        </div>
+       <div class="frame">
+        <h2>Locations</h2>
+         <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.123456!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae123abc!2sYour+Location+Name!5e0!3m2!1sen!2sin!4v1691234567890" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <!-- Address -->
+  <p><strong>123 Main Street, Foodland</strong></p>
+  <p>Phone: +123-456-7890</p>
+  <p>Email:<a href="mailto:contact@foodiesdelight.com">contact@foodiesdelight.com</a></p>
+
+       </div>
+        <footer>
+            <p>@2024 Foodie's Delight. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home  | </a></li>
+                <li><a href="menu.html">Menu  | </a></li>
+                <li><a href="reservation.html">Reservations  | </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

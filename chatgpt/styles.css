@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    
+}
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}   
+.sidebar h1{
+    margin: 10px 0 10px 0;
+}
+/*Entire Chat area */
+.main{
+    background-color: rgb(217, 155, 155);
+    padding: 30px;
+    
+}
+.topbar{
+    background-color: white;
+    padding: 10px;
+   
+}
+
+/*The side circle*/
+.avatar{
+    border-radius: 50%;
+    color: black;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.bot{
+    background-color: rgb(156, 228, 156);
+   
+}
+.user{
+    background-color: rgb(230, 52, 123);
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Msg*/
+.bubble{
+    border: 1px solid bisque;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+
+/*Send button*/
+button{
+    background-color: rgb(29, 137, 232);
+    border-radius: 9px;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 60px;
+    text-align: center;
+    justify-content: center;
+
+
+
+
+}
+
+/*GRID for entire page*/
+.app{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 220px 1fr;
+    grid-template-areas: 
+    "sidebar chat"
+    "sidebar footer";
+    height: 100vh;
+   
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(32, 3, 60);
+    color:white;
+}
+.main{
+    grid-area: chat;
+    
+    
+}
+#composer{
+    grid-area: footer;
+}
+/*Chat*/
+/*GRID TRIED*/
+/*.main{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-areas: 
+    "windows"
+    "chat1"
+    "msg";
+}*/
+.main{
+ display: flex;
+ margin: 0;
+ padding: 0;
+
+}
+.topbar{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.chat-area{
+    margin-bottom: 470px;
+}
+.main{
+    display: block;
+    height: 100vh;
+    padding: 15px;
+}
+.avatar,.msg{
+    display: flex;
+
+}
+input{
+    width: 50vw;
+   border-radius: 4px;
+  
+}
+
+  
+
+
+

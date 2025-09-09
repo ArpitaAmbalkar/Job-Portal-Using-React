@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform</title>
+    <style>
+h1{
+    font-size:50px;
+    color: blueviolet;
+    text-shadow: 3px 3px 5px black;
+}
+.box1{
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.box2{
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    box-shadow: inset 2px 2px 2px 2px black;
+}
+.translate{
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    background-color: aqua;
+    width: 150px;
+}
+.translate:hover{
+    transform: translate(50px,50px);
+    transition: 1s;
+}
+.scale{
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    background-color: aqua;
+    width: 150px;
+}
+.scale:hover{
+    transform: scale(2);
+    transition: 1s;
+}
+.skew{
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    background-color: aqua;
+    width: 150px;
+}
+.skew:hover{
+    transform: skew(50px);
+    transition: 1s;
+}
+
+</style>
+</head>
+<body>
+    <h1>Text Shadow</h1>
+    <div class="box1">
+        Box Shadow
+    </div>
+    <br><br>
+    <div class="box2">
+        Inside box shadow(Inset-box)
+    </div>
+    <br><br>
+    <div class="translate">
+        Translate box
+    </div>
+    <br><br>
+    <div class="scale">
+        Scale the box(increase the size of box)
+    </div><br><br>
+    <div class="skew">Tilt</div>
+    <br><br>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border: none;
+            background-color: rgb(110, 110, 216);
+            height: 45px;
+            width: 90px;
+            margin: 20px;
+            border-radius: 5px;
+            transition: transform 1s linear;
+        }
+        .btn:hover{
+            transform: translateY(-5px) scale(1.1);
+        }
+        img{
+           height: 100%;
+           transition: transform 1.5s ease ;
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+        .image-container{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .card{
+            box-shadow: 0 1px 1px 1px black;
+            height: 150px;
+            width: 200px;
+            text-align: center;
+            align-content: center;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: box-shadow 1s ease;
+        }
+        .card:hover{
+           /* transform: translateY(-10px);*/
+            box-shadow: 1px 2px 3px 3px black;
+        }
+        a{
+            text-decoration: none;
+            position: relative;
+            color: black;
+            font-size: 22px;
+            margin: 3px;
+            transition: alls 7s ease-in-out;
+        }
+        a::after{
+            content:"";
+            background-color: blue;
+           
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2.4px;
+            transition: width 0.3s ease;
+            
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        
+        .fade-box{
+            background-color: green;
+            height: 150px;
+            width: 200px;
+            text-align: center;
+            align-content: center;
+            border-radius: 5px;
+            transition: opacity 1.2s ease;
+        }
+        .fade-box:hover{
+            opacity: 0.5;
+    
+        }
+    </style>
+</head>
+<body>
+    <!-- Smooth Button Hover Effect -->
+    <button class="btn">Hover Me</button>
+    <br><br>
+
+    <!-- Image Zoom on Hover -->
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1688600793944-4d45993e6583?q=80&w=1221&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="image" alt="Sample">
+    </div>
+    <br><br>
+
+
+    <!-- Card Shadow Expansion -->
+    <div class="card">Hover Card</div>
+    <br><br>
+
+
+    <!-- Navbar Link Underline Animation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <br><br>
+
+
+    <!-- Fade In / Fade Out Effect -->
+    <div class="fade-box">Hover Me</div>
+
+</body>
+</html>

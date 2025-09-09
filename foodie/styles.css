@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    display: flex;
+    list-style: none;
+    background-color: rgb(59, 54, 54);
+    justify-content: center;
+    gap: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.head{
+   text-align: center;
+   padding: 20px;
+}
+footer{
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(59, 54, 54) ;
+     opacity: 0.8;
+}
+.navbar{
+    background-color: rgb(177, 78, 42);
+}
+.navbar ul{
+    height: 50px;
+   align-items: center;
+}
+.main{
+    text-align: center;
+    padding-top: 50px;
+    height: 70vh;
+    background-color: white;
+    color:rgb(8, 8, 11);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+        .box1
+        {
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+            margin: 20px;
+            transition: background-color 2s ease;
+        }
+        .box2
+        {
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+            margin: 20px;
+            transition: transform 2s ease;
+            /*transition: all 2s ease   
+            For all properties*/
+        }
+        .box1:hover{
+            background-color: aqua;
+        }
+        .box2:hover{
+            transform:translateX(50px);
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><h1>Hover me</h1></div>
+    <div class="box2"><h1>Move me</h1></div>
+</body>
+</html>
+<!--
+transition: transition property transition duration transition timing function
+
+transition function=> linear
+ease->normal(default)
+ease-in->slow start,fast end
+ease-out fast start slow end
+ease-in-out->slow start,fast middle ,slow end
+
+-->

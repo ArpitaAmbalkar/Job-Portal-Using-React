@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(233, 138, 103);
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            padding: 20px;
+            border-radius: 9px;
+            box-shadow: 1px 1px 2px 2px black;
+           justify-self: center;
+            height: 76vh;
+            width: 40vw;
+            font-size: 18px;
+            background-color: whitesmoke;
+        }
+        form input{
+            margin: 15px 0 16px 0;
+            height: 20px;
+        }
+        textarea{
+            height: 80px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            background-color: rgb(59, 54, 54);
+            justify-content: center;
+            gap: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+         }
+        
+        footer {
+           background: #333;
+           color: white;
+           text-align: center;
+           padding: 15px;
+           margin-top: 20px;
+           opacity: 0.8;
+        }
+        #btn{
+            height: 50px;
+            width: 90px;
+            border: none;
+            border-radius: 5px;
+            background-color:rgb(233, 138, 103);
+            color:white;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #btn:hover{
+            transform: translateY(-3px) scale(1.05);
+            transition: 1s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book a Table </h1>
+        </div>
+        <form method="POST">
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="phone">Phone : </label>
+            <input type="number" id="phone" placeholder="Enter your phone number" required>
+            <label for="date">Date : </label>
+            <input type="date" id="name" required>
+            <label for="time">Time : </label>
+            <input type="time" id="time" required>
+            <label for="guest">Number of guests : </label>
+            <input type="number" id="guest" >
+            <label for="req">Special Requests : </label>
+            <textarea placeholder="Enter any special requests"></textarea>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+         <footer>
+            <p>@2024 Foodie's Delight. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home  | </a></li>
+                <li><a href="menu.css">Menu  | </a></li>
+                <li><a href="reservation.html">Reservations  | </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
